@@ -1,0 +1,45 @@
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,500);
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+html, body {
+    background-color:  #007e6d;
+    text-align: center;
+    align-content: center;
+    margin: 10px auto;
+    font-family: "Anonymous Pro";
+    color: #fff;
+    text-decoration: none;
+}
+#wel {
+    font-family: 'Viga'; 
+    text-transform: uppercase;
+    margin-top: 200px;
+    margin-bottom: 0;
+    color: white;
+}
+#wel-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 0px 0px 4px #fff;
+}
+h1#nm {
+    line-height: 0%;
+    color: white;
+    font-size: 50px;
+}
+
+p#wel-1 {
+    font-size: 20px;
+}
+#fot {
+    transform: translateY(1500%);
+}
+* {
+    background-color: #007e6d;
+    color:#fff;
+    text-decoration: none;
+}
