@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+body {
+  font-family: Viga, Sans-Serif;
+  margin: 0;
+  padding: 0;
+  background-color: #37474F;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+.header-area h2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Viga', Sans-Serif;
+  color: #fff;
+  font-size: 50px;
+  text-shadow: 0 2px 5px rgba(0,0,0,.5);
+}
+.header-area h2 span {
+  color: #00c69b;
+  font-size: 50px;
+}
+
+#footer {
+    height:50px;
+    line-height:50px;
+    color:#fff;
+    position:absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    text-decoration: none;
+    text-decoration-color: none;
+}
+#sos {
+  bottom: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  line-height: 50px;
+  position: absolute;
+}
+.fa-twitter:hover { 
+    background-color: #46c0fb; 
+}
+#sos [class*="fa fa-"] {
+    background-color: #00c69b;
+    border-radius: 30px;
+    color: #fff;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin: auto 5px;
+    width: 50px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0px 1px 5px #000;
+}
