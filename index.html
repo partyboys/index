@@ -5,22 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <title>PRTYBYZ APi'S</title>
 </head>
 <body>
-      <div class="header-area"> 
+  <div id="nav">
+    <div id="nav-con" onclick="menu(this)">
+        <div class="b1"></div>
+        <div class="b2"></div>
+        <div class="b3"></div>
+    </div>
+      <div id="nav-logo">
+        <a id="tit-nav" href="#">PRTYBYZ</a>
+      </div>
+    </div>
+    <div class="menu-con">
+        <ul class="menu">
+          <li><a href="/home">HOME</a></li>
+          <li><a href="/about">ABOUT</a></li>
+          <li id="btn">
+            <button id="signup" class="mdc-button mdc-button--raised ">
+              <span class="mdc-button__ripple"></span>
+              <span class="mdc-button__label">Daftar</span>
+            </button>
+            <button id="signin" class="mdc-button mdc-button--raised ">
+                <span class="mdc-button__ripple"></span>
+                <span class="mdc-button__label">Login</span>
+            </button>
+          </li>
+        </ul>
+    </div>    
+      <div class="header-area">
           <h2>I'aM 
           <span class="animate"></span>
           </h2>
       </div>
       <div id="sos">
-          <a class="fa fa-twitter" title="" target="_blank" href="https://twitter.com/alfath_ra/"></a>
-          <a class="fa fa-facebook" title="" target="_blank" href="#"></a>
+          <a class="twit fa fa-twitter" title="" target="_blank" href="https://twitter.com/alfath_ra/"></a>
+          <a class="fb fa fa-facebook" title="" target="_blank" href="#"></a>
       </div>
       <div id="footer">
-        <p><b>2021 - Copyright by PrTyByZ<b></p>
+        <p><b>2021 - Copyright by <a  id="link" href="http://github.com/partyboyz/"> PrTyByZ</a></b></p>
       </div>
-     <script src="typed.js"></script>
-     <script src="str.js"></script>
+      <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+      <script src="typed.js"></script>
+      <script src="str.js"></script>
 </body>
 </html>
