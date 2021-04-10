@@ -33,6 +33,10 @@ html,body{
   user-select: none;
   border-radius: 15px 15px 0 0;
   background: #00c69b;
+  transition: 0.7s;
+}
+.wrapper .title:hover {
+  color: #353b48;
 }
 .wrapper form{
   padding: 10px 30px 50px 30px;
@@ -115,6 +119,10 @@ form .field input[type="submit"]{
 }
 form .field input[type="submit"]:active{
   transform: scale(0.95);
+}
+form .field input[type="submit"]:hover{
+  background: #353b48;
+  color: #00c69b;
 }
 form .signup-link{
   color: #262626;
