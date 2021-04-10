@@ -29,6 +29,8 @@ body {
   color: #fff;
   font-size: 50px;
   text-shadow: 0 2px 5px rgba(0,0,0,.5);
+  display: block;
+  z-index: -1;
 }
 .header-area h2 span {
   color: #00c69b;
@@ -55,6 +57,7 @@ body {
 #link:hover {
   color: white;
   text-decoration: none;
+  transition: 0.5s;
 
 }
 #sos {
@@ -64,13 +67,15 @@ body {
   line-height: 50px;
   position: absolute;
 }
-#sos a.twit.fa.fa-twitter:hover { 
+#sos a.twit.fa.fa-twitter:hover {
     background-color: #353b48;
     box-shadow: 0px 0px 5px white;
+    transition: 0.5s;
 }
-#sos a.fb.fa.fa-facebook:hover { 
+#sos a.fb.fa.fa-facebook:hover {
   background-color: #353b48;
   box-shadow: 0px 0px 5px white;
+  transition: 0.5s;
 }
 #sos [class*="fa fa-"] {
     background-color: #00c69b;
@@ -92,100 +97,112 @@ body {
   width: 100%;
   top: 0;
 }
-#nav a {
+#nav-logo a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #fff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-}
-#nav-logo {
-  background-color: #353b48;
-  display: block;
 
 }
-#tit-nav {
+#tit-nav p {
   font-family: 'Dela Gothic One', cursive;
   font-size: 25px;
 }
-#nav-con {
-  display: inline-block;
-  cursor: pointer;
-  float: right;
-  padding: 14px 16px;
-}
-.b1, .b2, .b3 {
-  width: 35px;
-  height: 5px;
-  background-color: #fff;
-  margin: 6px 10px;
-  transition: 0.4s;
-}
-div ul {
-  display: flex;
-  list-style: none;
-}
-div ul li a {
-  text-decoration: none;
+#tit-nav p:hover {
   color: #353b48;
+  transition: 0.7s;
 }
-.menu-con .menu {
-  position: absolute;
-  flex-direction: column;
-  right: 0;
-  top: 0;
-  width: 25%;
-  height: 50vh;
+.menu-con ul #signin {
+  position: fixed;
+  right: 30px;
+  top: 15px;
+  width: 120px;
   align-items: center;
-  justify-content: space-evenly;
-  color: #000;
-  background-color: #00c69b;
   transition: 1s;
-  margin-top: 50px;
-  
-  transform: translateX(100%);
-}
-.change .b1 {
-  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-  transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-/* Fade out the second bar */
-.change .b2 {
-  opacity: 0;
-}
-
-/* Rotate last bar */
-.change .b3 {
-  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-  transform: rotate(45deg) translate(-8px, -8px) ;
-}
-
-.menu-con .menu.asyu {
-  transform: translateX(0);
-}
-#btn {
-  letter-spacing: 15px;
-}
-#signup {
-  font-family: 'Viga', sans-serif;
-  background-color: #353b48;
-  box-shadow: 0px 0px 5px #000;
-}
-#signin {
-  
   font-family: 'Viga', sans-serif;
   background-color: #fff;
   box-shadow: 0px 0px 5px #000;
   color: #353b48;
 }
-#signin:hover {
+.menu-con ul #signin:hover {
   background-color: #353b48;
   color: #00c69b;
   box-shadow: 0px 0px 5px #fff;
+  transition: 0.5s;
 }
-#signup:hover {
-  color: #00c69b;
-  box-shadow: 0px 0px 5px #fff;
+@media screen and (max-width: 700px){
+  #nav-con {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    padding: 14px 16px;
+  }
+  .b1, .b2, .b3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 10px;
+    transition: 0.4s;
+  }
+  div ul {
+    display: flex;
+    list-style: none;
+  }
+  div ul li a {
+    text-decoration: none;
+    color: #353b48;
+  }
+  .menu-con .menu {
+    position: fixed;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    width: 25%;
+    height: 50vh;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+    color: #000;
+    background-color: #00c69b;
+    transition: 1s;
+    margin-top: 50px;
+    transform: translateX(100%);
+  }
+  
+  .change .b1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .b2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .b3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
+  
+  .menu-con .menu.asyu {
+    transform: translateX(0);
+  }
+  #btn {
+    letter-spacing: 15px;
+  }
+  .menu-con .menu #signin {
+    display: fixed;
+    font-family: 'Viga', sans-serif;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #000;
+    color: #353b48;
+    top: 10%;
+    transform: translateY(650%);
+    width: auto;
+    margin: -10px;
+    justify-content: space-evenly;
+  }
 }
